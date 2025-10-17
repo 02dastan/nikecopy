@@ -1,0 +1,598 @@
+.mar {
+  width: 100%;
+  height: 50px;          
+  display: flex;
+  justify-content: center;  
+  align-items: center;     
+  overflow: hidden; 
+}
+
+.mar span {
+  position: absolute;
+  white-space: nowrap;      
+  font-size: 15px;
+  animation: slide 9s infinite;
+  opacity: 0;  
+  text-decoration: underline;
+  font-family: monospace;
+  
+}
+
+.mar span:nth-child(1) { animation-delay: 0s; }
+.mar span:nth-child(2) { animation-delay: 3s; }
+.mar span:nth-child(3) { animation-delay: 6s; }
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  33% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  43% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+.bootle {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  width: 100%;           
+  height: 100px;
+  z-index: 10;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding: 0 40px;       
+  box-sizing: border-box;
+}
+
+
+.bootle1 {
+    font-size: 24px;
+    font-weight: 500;
+  margin-left: 0; 
+}
+
+.bootle2 {
+    font-size: 20px;
+    font-weight: 400;
+  position: absolute;  
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+
+  gap: 20px;
+}
+.whole{
+    width: 100%;
+    height: auto;
+
+}
+.whole img{
+    width: 100%;
+    height: 100%;
+}
+.abc{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.abcd{
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.abcd span{
+    font-size: 15p;
+    font-weight: 600;
+    font-family: monospace;
+}
+.abce{
+    margin: 50px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: monospace;
+}
+.abce1{
+    min-width: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.abce img{
+    height: 50px;
+    width: auto;
+}
+.photos2{
+  
+    padding: 0 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 0;
+  scrollbar-width: thin;
+}
+.photos2 div{
+  position: relative;
+  flex: 0 0 30%; 
+  min-width: 250px;
+  padding: 10px 10px;
+  overflow: hidden;
+}
+.photos2 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.photos2 span{
+  font-size: 20px;
+  position: absolute;
+  top: 80%;
+  left: 8%;
+  padding: 1px 10px;
+  border-radius: 20px;
+  background-color: white
+}
+.abcf{
+    padding-top: 100px;
+    padding-left: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+.abcf span{
+    font-size: 30px;
+    font-weight: 500;
+    font-family: monospace;
+}
+.air{
+    padding: 2px 10px;
+}
+.abcef{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.abcef img{
+    width: 100%;
+    height: 100%;
+}
+.abcef1{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.abcef1 button{
+    max-width: 200px;
+}
+.abcef1 .spotlight{color: white;}
+.twenty{
+    color: white;
+    font-size: 20px;
+}
+.abcff{
+    padding: 0 100px;
+    width: (100%-200px);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+    
+}
+.abcfftext{
+    padding-top: 100px;
+    font-size: 22px;
+    font-family: monospace;
+    font-weight: 600;
+}
+.abcee{
+    width: 100%;
+    display: flex;
+
+}
+.abcee1{
+    flex: 1;
+    
+}
+.abcee1 img{
+    width: 100%;
+    height: 100%;
+}
+.abcee2{
+    flex: 1;
+}
+.abcee2 img{
+    width: 100%;
+    height: 100%;
+}
+.abcee3{
+    flex: 1;
+}
+.abcee3 img{
+    width: 100%;
+    height: 100%;
+}
+.vip{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+}
+.vip span{
+    font-size: 20px;
+    font-family: monospace;
+}
+.secondw {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+.dropdown-container:has(.trigger-men:hover) .s1,
+.dropdown-container:has(.trigger-women:hover) .s2,
+.dropdown-container:has(.trigger-jordan:hover) .s4,
+.dropdown-container:has(.trigger-sale:hover) .s6,
+.dropdown-container:has(.trigger-sport:hover) .s5,
+.dropdown-container:has(.trigger-kids:hover) .s3 {
+  max-height: 500px;
+  opacity: 1;
+}
+ 
+.s1:hover {
+  max-height: 500px;
+  opacity: 1;
+} 
+.s2:hover {
+  max-height: 500px;
+  opacity: 1;
+} 
+.s3:hover {
+  max-height: 500px;
+  opacity: 1;
+} 
+.s4:hover {
+  max-height: 500px;
+  opacity: 1;
+}
+.s5:hover {
+  max-height: 500px;
+  opacity: 1;
+}
+.s6:hover {
+  max-height: 500px;
+  opacity: 1;
+}
+.main2 span:hover{
+    text-decoration: underline;
+}
+.boxw1 {
+  overflow: hidden; 
+  padding: 200px;
+  transition: all 1s ease;
+}
+.secondw1{
+  max-height: 0;       
+  opacity: 0;
+  padding: 0 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.linearw{
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: start;
+}
+.linearw .linearw2{
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(99, 99, 99);
+  padding-bottom: 10px;
+}
+.linearw1{
+  font-size: 13px;
+  font-weight: 500;
+  color: black;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 920px) {
+
+  .mar {
+    height: 40px;
+  }
+  .mar span {
+    font-size: 13px;
+  }
+  
+
+  .bootle {
+    height: 80px;
+    padding: 0 20px;
+  }
+  .bootle1 {
+    font-size: 20px;
+  }
+  .bootle2 {
+    font-size: 16px;
+    gap: 15px;
+  }
+
+  .abc {
+    padding: 0 20px;
+  }
+  .abcd {
+    max-width: 90%;
+  }
+  .abcd span {
+    font-size: 13px;
+  }
+  
+  .abce {
+    margin: 40px 30px;
+    font-size: 18px;
+  }
+  .abce1 {
+    min-width: 100px;
+  }
+  .abce img {
+    height: 40px;
+  }
+  
+  .photos2 {
+    padding: 0 30px;
+  }
+  .photos2 div {
+    flex: 0 0 40%;
+    min-width: 200px;
+  }
+  .photos2 span {
+    font-size: 16px;
+    padding: 1px 8px;
+  }
+  
+  .abcf {
+    padding-top: 80px;
+    padding-left: 30px;
+  }
+  .abcf span {
+    font-size: 24px;
+  }
+  
+  .abcef1 {
+    gap: 15px;
+  }
+  .abcef1 button {
+    max-width: 180px;
+  }
+  .abcef1 .spotlight {
+    font-size: 50px;
+  }
+  .twenty {
+    font-size: 18px;
+  }
+  
+  .abcff {
+    padding: 0 50px;
+    gap: 25px;
+  }
+  .abcfftext {
+    padding-top: 80px;
+    font-size: 20px;
+  }
+  
+  .abcee {
+    flex-direction: column;
+  }
+  .abcee1, .abcee2, .abcee3 {
+    width: 100%;
+  }
+  
+  .vip span {
+    font-size: 18px;
+  }
+  
+  .boxw1 {
+    padding: 100px;
+  }
+  .secondw1 {
+    padding: 0 50px;
+  }
+  .linearw {
+    width: 180px;
+  }
+  .linearw1 {
+    font-size: 12px;
+  }
+  .linearw .linearw2 {
+    font-size: 11px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .mar {
+    height: 35px;
+  }
+  .mar span {
+    font-size: 11px;
+  }
+  
+  .bootle {
+    height: 60px;
+    padding: 0 10px;
+    flex-wrap: wrap;
+  }
+  .bootle1 {
+    font-size: 16px;
+  }
+  .bootle2 {
+    font-size: 12px;
+    gap: 8px;
+    position: relative;
+    left: auto;
+    transform: none;
+    width: 100%;
+    justify-content: center;
+    margin-top: 5px;
+  }
+  
+  .whole img {
+    object-fit: contain;
+  }
+  
+  .abc {
+    padding: 0 10px;
+  }
+  .abcd {
+    max-width: 100%;
+    gap: 5px;
+  }
+  .abcd span {
+    font-size: 11px;
+  }
+  
+  .abce {
+    margin: 30px 15px;
+    font-size: 16px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .abce1 {
+    min-width: 80px;
+    gap: 5px;
+  }
+  .abce img {
+    height: 30px;
+  }
+  
+  .photos2 {
+    padding: 0 15px;
+  }
+  .photos2 div {
+    flex: 0 0 70%;
+    min-width: 150px;
+    padding: 5px 5px;
+  }
+  .photos2 span {
+    font-size: 12px;
+    padding: 1px 5px;
+    top: 85%;
+    left: 5%;
+  }
+  
+  .abcf {
+    padding-top: 60px;
+    padding-left: 15px;
+  }
+  .abcf span {
+    font-size: 18px;
+  }
+  
+  .air {
+    padding: 2px 8px;
+    font-size: 14px;
+  }
+  
+  .abcef1 {
+    top: 60%;
+    gap: 10px;
+  }
+  .abcef1 button {
+    max-width: 150px;
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+  .abcef1 .spotlight {
+    font-size: 32px;
+    letter-spacing: -2px;
+  }
+  .twenty {
+    font-size: 14px;
+  }
+  
+  .abcff {
+    padding: 0 20px;
+    gap: 20px;
+  }
+  .abcfftext {
+    padding-top: 60px;
+    font-size: 16px;
+  }
+  
+  .abcee {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .abcee1, .abcee2, .abcee3 {
+    width: 100%;
+  }
+  
+  .vip {
+    gap: 8px;
+  }
+  .vip span {
+    font-size: 14px;
+  }
+  
+  .boxw1 {
+    padding: 50px 20px;
+  }
+  .secondw1 {
+    padding: 0 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .linearw {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+  }
+  .linearw1 {
+    font-size: 11px;
+    padding-bottom: 10px;
+  }
+  .linearw .linearw2 {
+    font-size: 10px;
+    padding-bottom: 5px;
+  }
+}

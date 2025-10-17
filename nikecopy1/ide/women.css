@@ -1,0 +1,327 @@
+.women-section {
+  width: 100%;
+  padding:10px;
+  background-color: rgb(241, 241, 241);
+}
+
+.cards-container {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 20px;
+  padding-bottom: 20px;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+}
+
+.cards-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.cards-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.cards-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 300px;
+  border: none;
+  background-color: rgb(235, 235, 235);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-body {
+  background-color: rgb(241, 241, 241);
+  padding: 50px 20px 20px 20px;
+  font-family: monospace;
+}
+
+.card-title {
+  font-size: 18px;
+  color: black;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.women-container {
+  width: 100%;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+.ew {
+  width: 100%;
+  padding: 50px 100px;
+}
+
+.eww {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.women-box {
+  flex: 0 0 auto;
+  width: 400px;
+  background-color: rgb(235, 235, 235);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.women-box img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.women-text {
+  font-size: 18px;
+  text-align: left;
+  color: black;
+  overflow-wrap: break-word;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+.gym {
+  padding: 0 10px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.gymw {
+    width: 100%;
+  padding: 0 10px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.w {
+  color: gray;
+}
+
+.er {
+  color: white;
+}
+
+.innerp span {
+  color: white;
+}
+
+.er span {
+  color: rgb(255, 255, 255);
+}
+
+.air {
+    color: black;
+  background-color: gray;
+}
+
+@media (max-width: 920px) {
+  .women-section {
+    padding: 40px 60px;
+  }
+  
+  .card {
+    width: 250px;
+  }
+  
+  .card-img-top {
+    height: 250px;
+  }
+  
+  .card-title {
+    font-size: 16px;
+  }
+  
+  .cards-container {
+    gap: 15px;
+  }
+
+  .women-container {
+    padding: 0 30px;
+    gap: 15px;
+  }
+  
+  .ew {
+    padding: 40px 60px;
+  }
+  
+  .eww {
+    padding-bottom: 40px;
+  }
+  
+  .women-box {
+    width: 320px;
+  }
+  
+  .women-box img {
+    height: 250px;
+  }
+  
+  .women-text {
+    font-size: 16px;
+  }
+  
+  .gym {
+    padding: 0 8px;
+    padding-top: 40px;
+    gap: 2px;
+  }
+}
+
+@media (max-width: 600px) {
+  .women-section {
+    padding: 30px 20px;
+  }
+  
+  .card {
+    width: 220px;
+  }
+  
+  .card-img-top {
+    height: 200px;
+  }
+  
+  .card-title {
+    font-size: 14px;
+  }
+  
+  .card-body {
+    padding: 30px 15px 15px 15px;
+  }
+  
+  .cards-container {
+    gap: 10px;
+  }
+
+  .women-container {
+    padding: 0 15px;
+    gap: 10px;
+  }
+  
+  .ew {
+    padding: 30px 20px;
+  }
+  
+  .eww {
+    padding-bottom: 30px;
+  }
+  
+  .women-box {
+    width: 280px;
+  }
+  
+  .women-box img {
+    height: 200px;
+  }
+  
+  .women-text {
+    font-size: 14px;
+  }
+  
+  .gym {
+    padding: 0 8px;
+    padding-top: 30px;
+    gap: 1px;
+  }
+  
+  .air {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .women-section {
+    padding: 20px 15px;
+  }
+  
+  .card {
+    width: 200px;
+  }
+  
+  .card-img-top {
+    height: 180px;
+  }
+  
+  .card-title {
+    font-size: 12px;
+  }
+  
+  .card-body {
+    padding: 25px 10px 10px 10px;
+  }
+  
+  .cards-container {
+    gap: 8px;
+  }
+
+  .women-container {
+    padding: 0 10px;
+    gap: 8px;
+  }
+  
+  .ew {
+    padding: 20px 15px;
+  }
+  
+  .eww {
+    padding-bottom: 20px;
+  }
+  
+  .women-box {
+    width: 240px;
+  }
+  
+  .women-box img {
+    height: 180px;
+  }
+  
+  .women-text {
+    font-size: 12px;
+  }
+  
+  .gym {
+    padding: 0 6px;
+    padding-top: 25px;
+    gap: 1px;
+  }
+  
+  .air {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+}
